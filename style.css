@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
 html, body {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
+
 body{
   background: #EBF2F8;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Sono', sans-serif;
 }
+
 .tasks{
   width: 300px;
   height: 405px;
@@ -17,11 +20,13 @@ body{
   right: 0px;
   margin: 0px auto;
 }
-input[type=checkbox] {
+
+input[type="checkbox"] {
   display: none;
 }
+
 label{
-  background: #040C3A;
+  background: #264653;
   height: 70px;
   width: 100%;
   display: block;
@@ -40,14 +45,16 @@ label{
   border-radius: 4px;
   margin: 10px 0;
 }
+
 label h2 span{
   display: block;
   font-size: 13px;
   text-transform: capitalize;
   font-weight: 600;
-  color: #FF4A7B;
+  color: #e9c46a;
   margin-top: 5px;
 }
+
 label:before{
   content:"";
   width: 20px;
@@ -60,21 +67,24 @@ label:before{
   top: 30%;
   transition: border 0.7s ease
 }
+
 #label-1:checked ~ label[for=label-1],
 #label-2:checked ~ label[for=label-2],
 #label-3:checked ~ label[for=label-3],
 #label-4:checked ~ label[for=label-4],
 #label-5:checked ~ label[for=label-5]{
-  background: #FF4A7B;
+  background: #e9c46a;
   color: #fff;
 }
+
 #label-1:checked ~ label[for=label-1] h2 span,
 #label-2:checked ~ label[for=label-2] h2 span,
 #label-3:checked ~ label[for=label-3] h2 span,
 #label-4:checked ~ label[for=label-4] h2 span,
 #label-5:checked ~ label[for=label-5] h2 span{
-  color: #040C3A;
+  color: #264653;
 }
+
 #label-1:checked ~ label[for=label-1]:before,
 #label-2:checked ~ label[for=label-2]:before,
 #label-3:checked ~ label[for=label-3]:before,
